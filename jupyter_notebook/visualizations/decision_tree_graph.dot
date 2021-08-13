@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Percent_White <= 0.883\ngini = 0.595\nsamples = 1706\nvalue = [757, 196, 753]\nclass = high percentage", fillcolor="#fffefe"] ;
+1 [label="CVAC_vloc <= 0.795\ngini = 0.581\nsamples = 1017\nvalue = [519, 108, 390]\nclass = high percentage", fillcolor="#fae5d6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Percent_Black <= 0.011\ngini = 0.572\nsamples = 812\nvalue = [442, 89, 281]\nclass = high percentage", fillcolor="#f7d9c3"] ;
+1 -> 2 ;
+3 [label="gini = 0.662\nsamples = 128\nvalue = [42, 37, 49]\nclass = medium percentage", fillcolor="#f5effd"] ;
+2 -> 3 ;
+4 [label="gini = 0.537\nsamples = 684\nvalue = [400, 52, 232]\nclass = high percentage", fillcolor="#f5d0b5"] ;
+2 -> 4 ;
+5 [label="Percent_Asian <= 0.008\ngini = 0.568\nsamples = 205\nvalue = [77, 19, 109]\nclass = medium percentage", fillcolor="#e0cef8"] ;
+1 -> 5 ;
+6 [label="gini = 0.549\nsamples = 155\nvalue = [48, 16, 91]\nclass = medium percentage", fillcolor="#ccaff5"] ;
+5 -> 6 ;
+7 [label="gini = 0.53\nsamples = 50\nvalue = [29, 3, 18]\nclass = high percentage", fillcolor="#f6d4bb"] ;
+5 -> 7 ;
+8 [label="SVI <= 0.465\ngini = 0.587\nsamples = 689\nvalue = [238, 88, 363]\nclass = medium percentage", fillcolor="#dcc8f8"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Percent_Black <= 0.003\ngini = 0.6\nsamples = 467\nvalue = [192, 58, 217]\nclass = medium percentage", fillcolor="#f4edfd"] ;
+8 -> 9 ;
+10 [label="gini = 0.514\nsamples = 68\nvalue = [43, 6, 19]\nclass = high percentage", fillcolor="#f2c19e"] ;
+9 -> 10 ;
+11 [label="gini = 0.597\nsamples = 399\nvalue = [149, 52, 198]\nclass = medium percentage", fillcolor="#e6d8fa"] ;
+9 -> 11 ;
+12 [label="CVAC_vloc <= 0.925\ngini = 0.506\nsamples = 222\nvalue = [46, 30, 146]\nclass = medium percentage", fillcolor="#b78ef0"] ;
+8 -> 12 ;
+13 [label="gini = 0.491\nsamples = 217\nvalue = [44, 27, 146]\nclass = medium percentage", fillcolor="#b58af0"] ;
+12 -> 13 ;
+14 [label="gini = 0.48\nsamples = 5\nvalue = [2, 3, 0]\nclass = low percentage", fillcolor="#bdf6d5"] ;
+12 -> 14 ;
+}
